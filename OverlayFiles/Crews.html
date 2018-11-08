@@ -92,7 +92,7 @@
 		position: fixed;
 		text-align: right;
 		width: 24%;
-		margin-left: 360px;
+		margin-left: 350px;
 		margin-top: 20px;
 		font-size: 24pt;
 		letter-spacing: 1pt;
@@ -101,7 +101,7 @@
 	div.player2{
 		position:fixed;
 		text-align: left;
-		margin-left: 1100px;
+		margin-left: 1110px;
 		margin-top: 20px;
 		font-size: 24pt;
 		letter-spacing: 1pt;
@@ -109,12 +109,14 @@
 	}
 
 	div.player1score{
-		margin-left: 867px;
+		margin-left: 863px;
+		letter-spacing: 1pt;
 
 	}
 
 	div.player2score{
-		margin-left: 1030px;
+		margin-left: 1035px;
+		letter-spacing: 1pt;
 	}
 
 	div.round{
@@ -142,13 +144,13 @@
   <div id="app">
 	<div class="player1score skewed score">
 		<transition name="fade" mode="out-in">
-			<span class="score" :key="info.team1_games_s4" v-html="info.team1_games_s4"></span>
+			<span class="score" :key="info.p1_games_s4" v-html="info.p1_games_s4"></span>
 		</transition>
 	</div>
 
 	<div class="player2score skewed-rev score">
 		<transition name="fade" mode="out-in">
-			<span class="score" :key="info.team2_games_s4" v-html="info.team2_games_s4"></span>
+			<span class="score" :key="info.p2_games_s4" v-html="info.p2_games_s4"></span>
 		</transition>
 	</div>
 
@@ -167,13 +169,13 @@
 
 	<div class='player1 skewed'>
 		<transition name="fade" mode="out-in">
-			<span class="name" :key="team1S4" v-html="team1S4"></span>
+			<span class="name" :key="player1NameplateS4" v-html="player1NameplateS4"></span>
 		</transition>
 	</div>
 
 	<div class='player2 skewed-rev'>
 		<transition name="fade" mode="out-in">
-			<span class="name" :key="team2S4" v-html="team2S4"></span>
+			<span class="name" :key="player2NameplateS4" v-html="player2NameplateS4"></span>
 		</transition>
 	</div>
 
