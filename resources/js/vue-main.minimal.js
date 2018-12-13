@@ -273,6 +273,18 @@ var app = new Vue({
     team2: function(){ return getTeamTag(this.info.p3_name, this.info.p4_name) },   
     team1S4: function(){ return getTeamTag(this.info.p1_name_s4, this.info.p2_name_s4) },
     team2S4: function(){ return getTeamTag(this.info.p3_name_s4, this.info.p4_name_s4) },
+    p1SponsorUltimate: function(){
+      return getSponsor(this.info.p1_sponsor_image_ultimate);
+    },
+    p2SponsorUltimate: function(){
+      return getSponsor(this.info.p2_sponsor_image_ultimate);
+    },
+    p3SponsorUltimate: function(){
+      return getSponsor(this.info.p3_ponsor_image_ultimate);
+    },
+    p4SponsorUltimate: function(){
+      return getSponsor(this.info.p4_sponsor_image_ultimate);
+    },
     player1Character: function(){
       return getMeleeChar(this.info.p1_char);
     },

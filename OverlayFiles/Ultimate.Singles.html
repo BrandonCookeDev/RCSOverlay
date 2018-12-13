@@ -34,6 +34,7 @@
 		text-align: center;
 		width: 90%;
 		margin-top: 4px;
+		margin-left: 5px;
 		font-size: 15pt;
 	}
 
@@ -42,10 +43,11 @@
 		text-align: center;
 		width: 35%;
 		margin-top: 28px;
-		margin-left: 123px;
+		margin-left: 124px;
 
 		letter-spacing: .3;
-		font-family: 'MADE Evolve Sans Bold';
+		font-family: 'MADE Evolve Sans Regular';
+		font-weight: bold;
 		font-size: 8pt;
 	}
 
@@ -138,47 +140,63 @@
 
   	<div class="tournamentInfo">
   		<span class="round">
-  			Losers Eighths
   			<transition mode="out-in" name="fade">
-  				<!--<span v-html="ultimateRound" :key="ultimateRound"></span>-->
+				<span class="round" :key="info.event_round" v-html="info.event_round"></span>
   			</transition>
   		</span>
   		<span class="bestOf">
-  				Best Of 3
   			<transition mode="out-in" name="fade">
-  				<!-- <span v-html="ultimateBestOf" :key="ultimateBestOf"></span> -->
+				<span class="round" :key="info.best_of_x" v-html="info.best_of_x"></span>
 			</transition>
   		</span>
   	</div>	
 
   	<div class="playerBox player1Info">
   		<span class="tag">
-  			cookie
+			<transition name="fade" mode="out-in">
+  				<span v-html="info.p1_name_ultimate" :key="info.p1_name_ultimate"></span>
+  			</transition>
   		</span>
   		<span class="score">
-  			3
+			<transition name="fade" mode="out-in">
+  				<span v-html="info.p1_games_ultimate" :key="info.p1_games_ultimate"></span>
+  			</transition>
   		</span>
-  		<span class="sponsor ultimate-sponsor-mask ">
-  			<span class="sponsorText">
-			</span>	
-			<span class="sponsorImage">
-				<img src="../resources/images/Teams/spy.png" onerror="this.style.display=none" />	
+  		<span class="sponsor ultimate-sponsor-mask">
+			<span class="sponsorImage" v-if="info.p1_sponsor_image_ultimate">
+				<transition name="fade" mode="out-in">
+					<img :src="p1SponsorUltimate" :key="info.p1_sponsor_image_ultimate" onerror="this.style.display=none" />	
+				</transition>
 			</span>
+  			<span class="sponsorText" v-else>
+				<transition name="fade" mode="out-in">
+					<span v-html="info.p1_sponsor_image_text_ultimate" :key="info.p1_sponsor_image_text_ultimate"></span>
+				</transition>
+			</span>	
   		</span>
   	</div>
 
   	<div class="playerBox player2Info">
   		<span class="tag">
-  			pretzelguy
+			<transition name="fade" mode="out-in">
+				<span v-html="info.p2_name_ultimate" :key="info.p2_name_ultimate"></span>
+  			</transition>
   		</span>
   		<span class="score">
-  			5
+			<transition name="fade" mode="out-in">
+				<span v-html="info.p2_games_ultimate" :key="info.p2_games_ultimate"></span>
+  			</transition>
   		</span>  		
   		<span class="sponsor ultimate-sponsor-mask">
-			<span class="sponsorImage">
-				<img src="../resources/images/Teams/CLG.png" onerror="this.style.display=none" />	
+			<span class="sponsorImage" v-if="info.p2_sponsor_image_ultimate">
+				<transition name="fade" mode="out-in">
+					<img :src="p2SponsorUltimate" :key="info.p2_sponsor_image_ultimate" onerror="this.style.display=none" />	
+				</transition>
 			</span>	
-  			<span class="sponsorText">
+  			<span class="sponsorText" v-else>
+				<transition name="fade" mode="out-in">
+					<span v-html="info.p2_sponsor_image_text_ultimate" :key="info.p2_sponsor_image_text_ultimate"></span>
+				</transition>
 			</span>	
   		</span>
   	</div>
