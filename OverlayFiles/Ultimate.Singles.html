@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="../node_modules/vue2-animate/dist/vue2-animate.css" />
+  <link rel="stylesheet" type="text/css" href="../resources/styles/masks.css" />
+  <link rel="stylesheet" type="text/css" href="../resources/styles/base.css" />
+  <!--<link rel="stylesheet" type="text/css" href="../resources/styles/MeleeGame.css" />-->
+
+  <script src="../node_modules/vue/dist/vue.js"></script>
+  <script src="../node_modules/axios/dist/axios.js"></script>
+
+  <style>
+	body{
+		color: #e2e2e2;
+		font-family: "Khand Medium";
+		font-weight: 200;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	div.tournamentInfo{
+		position: fixed;
+		width: 200px;
+		height: 50px;
+		right: 0;
+		top: 0;
+	}
+
+	div.tournamentInfo>span.round{
+		position: absolute;
+		text-align: center;
+		width: 90%;
+		margin-top: 4px;
+		font-size: 15pt;
+	}
+
+	div.tournamentInfo>span.bestOf{
+		position: absolute;
+		text-align: center;
+		width: 35%;
+		margin-top: 28px;
+		margin-left: 123px;
+
+		letter-spacing: .3;
+		font-family: 'MADE Evolve Sans Bold';
+		font-size: 8pt;
+	}
+
+	div.player1Info{
+		margin-left: 281px;
+	}
+
+	div.player2Info{
+		margin-left: 775px;
+	}
+
+	div.playerBox{
+		position: fixed;
+		height: 50px;
+		width: 19%;
+		bottom:0;
+		margin-bottom: 23px;
+	}
+
+	div.playerBox>span.tag{
+		position: absolute;
+		margin-left: 90px;
+		bottom:0;
+		width: 50%;
+
+		text-align: center;
+		font-size: 16pt;
+	}
+
+	div.playerBox>span.score{
+		position: absolute;
+		right:0;
+		bottom:0;
+		margin-bottom: -1px;
+		margin-right:4px;
+		width: 15%;
+
+		text-align: center;
+		font-size: 17pt;
+	}
+
+
+	div.playerBox>span.sponsor{
+		position: absolute;
+		mask-size: 68%;
+		-webkit-mask-size: 68%;
+
+		margin-left: 11px;
+		margin-top: 14px;
+		width: 42%;
+		height:65%;
+		text-align: center;
+	}
+
+
+	span.sponsor>span.sponsorText{
+		z-index:-5;
+		margin-left: 28px;
+		margin-top: 5px;
+		font-size: 16pt;
+	}
+
+	span.sponsor>span.sponsorImage{
+
+	}
+
+	span.sponsor>span.sponsorImage>img{
+		position: absolute;
+		z-index: 5;
+		width: 45px;
+		left:0;
+		margin-top:8px;
+		margin-left:42px;
+	}
+
+	span.sponsor>span.flagImage>img{
+		position: absolute;
+		z-index: 3;
+		width: 100px;
+		left:0;
+		margin-left:25px;
+	}
+
+
+  </style>
+</head>
+
+<body>
+  <div id="app">
+
+  	<div class="tournamentInfo">
+  		<span class="round">
+  			Losers Eighths
+  			<transition mode="out-in" name="fade">
+  				<!--<span v-html="ultimateRound" :key="ultimateRound"></span>-->
+  			</transition>
+  		</span>
+  		<span class="bestOf">
+  				Best Of 3
+  			<transition mode="out-in" name="fade">
+  				<!-- <span v-html="ultimateBestOf" :key="ultimateBestOf"></span> -->
+			</transition>
+  		</span>
+  	</div>	
+
+  	<div class="playerBox player1Info">
+  		<span class="tag">
+  			cookie
+  		</span>
+  		<span class="score">
+  			3
+  		</span>
+  		<span class="sponsor ultimate-sponsor-mask ">
+  			<span class="sponsorText">
+			</span>	
+			<span class="sponsorImage">
+				<img src="../resources/images/Teams/spy.png" onerror="this.style.display=none" />	
+			</span>
+  		</span>
+  	</div>
+
+  	<div class="playerBox player2Info">
+  		<span class="tag">
+  			pretzelguy
+  		</span>
+  		<span class="score">
+  			5
+  		</span>  		
+  		<span class="sponsor ultimate-sponsor-mask">
+			<span class="sponsorImage">
+				<img src="../resources/images/Teams/CLG.png" onerror="this.style.display=none" />	
+			</span>	
+  			<span class="sponsorText">
+			</span>	
+  		</span>
+  	</div>
+
+  </div>
+</body>
+
+<!-- This needs to be loaded after the dom -->
+<script src="../resources/js/vue-main.minimal.js"></script>
+
+</html>

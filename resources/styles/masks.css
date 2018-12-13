@@ -46,3 +46,14 @@ div.h2h-mask-right{
 	mask-image: url('../images/Masks/h2h-mask-right-x.png')
 }
 
+.ultimate-sponsor-mask{
+    -webkit-mask: url('../images/Masks/UltimateSponsorMask.png');
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask: url('../images/Masks/UltimateSponsorMask.png');
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-image: url('../images/Masks/UltimateSponsorMask.png')
+}

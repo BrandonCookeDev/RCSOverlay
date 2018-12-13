@@ -82,6 +82,19 @@ img.reverse-horizontal{
   font-style: normal;
 }
 
+@font-face{
+  font-family: "MADE Evolve Sans Bold";
+  src: url('../fonts/MADE Evolve Sans Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'MADE Evolve Sans Regular';
+  src: url('../fonts/MADE Evolve Sans Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   width: 1920px;
   height: 1080px;
@@ -184,4 +197,22 @@ div.gradient-container>yellow-left{
 
 div.gradient-container>yellow-right{
   background: linear-gradient(yellow, white);
+}
+
+
+/** GENERAL DEBUGGING **/
+.debug{
+  background-color: teal;
+  opacity: .5;
+}
+.debug2{
+  background-color: tan;
+  opacity: .5;
+}
+.debug3{
+  background-color: blue;
+  opacity: .5;
+}
+.debug4{
+  background-color: red;
 }
