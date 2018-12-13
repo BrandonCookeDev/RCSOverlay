@@ -163,7 +163,7 @@
   			</transition>
   		</span>
   		<span class="sponsor ultimate-sponsor-mask">
-			<span class="sponsorImage" v-if="info.p1_sponsor_image_ultimate">
+			<span class="sponsorImage" v-if="p1SponsorUltimate">
 				<transition name="fade" mode="out-in">
 					<img :src="p1SponsorUltimate" :key="info.p1_sponsor_image_ultimate" onerror="this.style.display=none" />	
 				</transition>
@@ -188,7 +188,7 @@
   			</transition>
   		</span>  		
   		<span class="sponsor ultimate-sponsor-mask">
-			<span class="sponsorImage" v-if="info.p2_sponsor_image_ultimate">
+			<span class="sponsorImage" v-if="p2SponsorUltimate">
 				<transition name="fade" mode="out-in">
 					<img :src="p2SponsorUltimate" :key="info.p2_sponsor_image_ultimate" onerror="this.style.display=none" />	
 				</transition>

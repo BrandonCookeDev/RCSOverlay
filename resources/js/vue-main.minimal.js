@@ -274,16 +274,20 @@ var app = new Vue({
     team1S4: function(){ return getTeamTag(this.info.p1_name_s4, this.info.p2_name_s4) },
     team2S4: function(){ return getTeamTag(this.info.p3_name_s4, this.info.p4_name_s4) },
     p1SponsorUltimate: function(){
-      return getSponsor(this.info.p1_sponsor_image_ultimate);
+      return this.info.p1_sponsor_image_ultimate != 'None' ?
+        getSponsor(this.info.p1_sponsor_image_ultimate) : null;
     },
     p2SponsorUltimate: function(){
-      return getSponsor(this.info.p2_sponsor_image_ultimate);
+      return this.info.p2_sponsor_image_ultimate != 'None' ?
+        getSponsor(this.info.p2_sponsor_image_ultimate) : null;
     },
     p3SponsorUltimate: function(){
-      return getSponsor(this.info.p3_ponsor_image_ultimate);
+      return this.info.p3_sponsor_image_ultimate != 'None' ?
+        getSponsor(this.info.p3_sponsor_image_ultimate) : null;
     },
     p4SponsorUltimate: function(){
-      return getSponsor(this.info.p4_sponsor_image_ultimate);
+      return this.info.p4_sponsor_image_ultimate != 'None' ?
+        getSponsor(this.info.p4_sponsor_image_ultimate) : null;
     },
     player1Character: function(){
       return getMeleeChar(this.info.p1_char);

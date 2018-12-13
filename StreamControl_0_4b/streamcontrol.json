@@ -116,8 +116,8 @@
     "p1_sponsor_image_s4": "None",
     "p1_sponsor_image_text": "TL",
     "p1_sponsor_image_text_s4": "TSM",
-    "p1_sponsor_image_text_ultimate": "",
-    "p1_sponsor_image_ultimate": "2gg",
+    "p1_sponsor_image_text_ultimate": "RCS",
+    "p1_sponsor_image_ultimate": "bc",
     "p1_twitter": "LIQUID_HBOX",
     "p1_twitter_s4": "Z3ro",
     "p1_twitter_ultimate": "",
@@ -208,6 +208,6 @@
     "team2_games": "0",
     "team2_games_s4": "0",
     "team2_games_ultimate": "0",
-    "timestamp": "1544681118",
+    "timestamp": "1544682088",
     "toggle_crews": "0"
 }
