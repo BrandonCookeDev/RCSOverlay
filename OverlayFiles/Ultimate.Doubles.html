@@ -51,12 +51,21 @@
 	}
 
 	div.player1Info{
-		margin-left: 281px;
+		margin-left: 130px;
 	}
 
 	div.player2Info{
-		margin-left: 775px;
+		margin-left: 403px;
 	}
+
+	div.player3Info{
+		margin-left: 674px;
+	}
+
+	div.player4Info{
+		margin-left: 947px;
+	}
+
 
 	div.playerBox{
 		position: fixed;
@@ -68,7 +77,7 @@
 
 	div.playerBox>span.tag{
 		position: absolute;
-		margin-left: 90px;
+		margin-left: 93px;
 		bottom:0;
 		width: 50%;
 
@@ -81,7 +90,6 @@
 		right:0;
 		bottom:0;
 		margin-bottom: -1px;
-		margin-right:4px;
 		width: 15%;
 
 		text-align: center;
@@ -96,7 +104,7 @@
 
 		margin-left: 11px;
 		margin-top: 14px;
-		width: 42%;
+		width: 44%;
 		height:65%;
 		text-align: center;
 	}
@@ -195,6 +203,56 @@
   			<span class="sponsorText" v-else>
 				<transition name="fade" mode="out-in">
 					<span v-html="info.p2_sponsor_image_text_ultimate" :key="info.p2_sponsor_image_text_ultimate"></span>
+				</transition>
+			</span>	
+  		</span>
+  	</div>
+
+  	<div class="playerBox player3Info">
+  		<span class="tag">
+			<transition name="fade" mode="out-in">
+				<span v-html="info.p3_name_ultimate" :key="info.p3_name_ultimate"></span>
+  			</transition>
+  		</span>
+  		<span class="score">
+			<transition name="fade" mode="out-in">
+				<span v-html="info.p3_games_ultimate" :key="info.p3_games_ultimate"></span>
+  			</transition>
+  		</span>  		
+  		<span class="sponsor ultimate-sponsor-mask">
+			<span class="sponsorImage" v-if="p3SponsorUltimate">
+				<transition name="fade" mode="out-in">
+					<img :src="p3SponsorUltimate" :key="info.p3_sponsor_image_ultimate" onerror="this.style.display=none" />	
+				</transition>
+			</span>	
+  			<span class="sponsorText" v-else>
+				<transition name="fade" mode="out-in">
+					<span v-html="info.p3_sponsor_image_text_ultimate" :key="info.p3_sponsor_image_text_ultimate"></span>
+				</transition>
+			</span>	
+  		</span>
+  	</div>
+
+  	<div class="playerBox player4Info">
+  		<span class="tag">
+			<transition name="fade" mode="out-in">
+				<span v-html="info.p4_name_ultimate" :key="info.p4_name_ultimate"></span>
+  			</transition>
+  		</span>
+  		<span class="score">
+			<transition name="fade" mode="out-in">
+				<span v-html="info.p4_games_ultimate" :key="info.p4_games_ultimate"></span>
+  			</transition>
+  		</span>  		
+  		<span class="sponsor ultimate-sponsor-mask">
+			<span class="sponsorImage" v-if="p4SponsorUltimate">
+				<transition name="fade" mode="out-in">
+					<img :src="p4SponsorUltimate" :key="info.p4_sponsor_image_ultimate" onerror="this.style.display=none" />	
+				</transition>
+			</span>	
+  			<span class="sponsorText" v-else>
+				<transition name="fade" mode="out-in">
+					<span v-html="info.p4_sponsor_image_text_ultimate" :key="info.p4_sponsor_image_text_ultimate"></span>
 				</transition>
 			</span>	
   		</span>
