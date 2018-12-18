@@ -1,20 +1,24 @@
 'use strict';
 
+const PORT = 8081;
+const path = require('path');
 let express = require('express');
+let chalk = require('chalk');
 let app = express();
+
+process.env.JSON_FILEPATH = path.join(__dirname, 'data.json');
+let routes = require('./lib/endpoints');
 
 app.use(require('cors')());
 app.use(require('body-parser').json());
-app.use(require('body-parser').urlencode());
+app.use(require('body-parser').urlencoded());
 app.use(require('compression')());
+app.use('/api', routes);
 
-const path = require('path');
-process.env.JSON_FILEPATH = path.join(__dirname, 'data.json');
-
-app.listen(8080, function(err){
+app.listen(PORT, function(err){
 	if(err){
 		console.error(err);
 		process.exit(1);
 	}
-	console.log('Server listening on port %s', chalk.blue(8080));
-}) 
+	console.log('Server listening on port %s', chalk.blue(PORT));
+});
