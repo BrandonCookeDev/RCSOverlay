@@ -1,12 +1,15 @@
 'use strict';
 
-const PORT = 8081;
 const path = require('path');
 let express = require('express');
 let chalk = require('chalk');
 let app = express();
 
-process.env.JSON_FILEPATH = path.join(__dirname, 'data.json');
+const PORT = 8081;
+const ROOT = path.join(__dirname, '..');
+const TEST_FILE = path.join(__dirname, 'data.json');
+const PROD_FILE = path.join(ROOT, 'StreamControl_0_4b', 'streamcontrol.json');
+process.env.JSON_FILEPATH = PROD_FILE;
 let routes = require('./lib/endpoints');
 
 app.use(require('cors')());
