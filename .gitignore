@@ -1,5 +1,7 @@
 resources/videos/*
 
+webm/
+
 ggResults.js
 
 node_modules
