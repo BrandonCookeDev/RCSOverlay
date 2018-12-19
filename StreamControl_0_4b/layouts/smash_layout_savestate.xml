@@ -65,7 +65,7 @@
 			<!-- Player / Team 2 -->
 			<tabSet x='298' y='2' width='196' height='365'> 
 				<tab name='Player  /  Team 2'>
-					<!-- Player 1 -->
+					<!-- Player 2 -->
 						<!-- Tag and Character -->
 						<label    x='6'   y='4'  width='60'  height='30'>Tag</label>
 						<lineEdit x='40'  y='4'  width='148' height='30' id='p2_name' dataSet='/dataSets/smash/meleePlayers.csv' dataField='1' >Player 2 Name</lineEdit>
@@ -91,7 +91,7 @@
 						<tabSet   x='4'   y='165'  width='48'  height='2'></tabSet>
 						<tabSet   x='140' y='165'  width='48'  height='2'></tabSet>
 						<button   x='56'  y='150'  width='80'  height='30' id='swapMelee24' type='swap' tooltip='Swap Players' swapSet1='p2_name,p2_char,p2_country,p2_sponsor_image,p2_twitter' swapSet2='p4_name,p4_char,p4_country,p4_sponsor_image,p4_twitter' >&#x25B2; Swap &#x25BC;</button>
-					<!-- Player 3, y+= 178 -->
+					<!-- Player 4, y+= 178 -->
 						<!-- Tag and Character -->
 						<label    x='6'   y='182'  width='60'  height='30'>Tag</label>
 						<lineEdit x='40'  y='182'  width='148' height='30' id='p4_name' dataSet='/dataSets/smash/meleePlayers.csv' dataField='1' >Player 4 Name</lineEdit>
@@ -126,7 +126,7 @@
 				<comboItem>No Color</comboItem><comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem>
 			</comboBox>
 			<!-- Swap Teams -->
-			<button x='202' y='183' width='92' height='30' id='swapTeams' type='swap' tooltip='Swap Players' swapSet1='p1_name,p1_char,p1_country,p1_sponsor_image,p1_twitter,p1_score,p3_name,p3_char,p3_country,p3_sponsor_image,p3_twitter' swapSet2='p2_name,p2_char,p2_country,p2_sponsor_image,p2_twitter,p2_score,p4_name,p4_char,p4_country,p4_sponsor_image,p4_twitter'  >&#x25C4; Swap &#x25BA;</button>
+			<button x='202' y='183' width='92' height='30' id='swapTeams' type='swap' tooltip='Swap Players' swapSet1='p1_name,p1_char,p1_country,p1_sponsor_image,p1_twitter,p1_score,p3_name,p3_char,p3_country,p3_sponsor_image,p3_twitter,p1_port_color,p1_games' swapSet2='p2_name,p2_char,p2_country,p2_sponsor_image,p2_twitter,p2_score,p4_name,p4_char,p4_country,p4_sponsor_image,p4_twitter,p2_port_color,p2_games'  >&#x25C4; Swap &#x25BA;</button>
 			<!-- Reset All -->
 			<button x='202' y='308' width='92' height='92' id='reset_all' type='reset' tooltip='Reset All' reset='p1_games,p2_games,p1_port_color,p2_port_color,p1_name,p1_char,p1_sponsor_image,p1_country,p1_twitter,p2_name,p2_char,p2_sponsor_image,p2_country,p2_twitter,p3_name,p3_char,p3_sponsor_image,p3_country,p3_twitter,p4_name,p4_char,p4_sponsor_image,p4_country,p4_twitter'>RESET ALL</button>						
 		</tab>
