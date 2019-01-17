@@ -22,7 +22,7 @@
   "dependencies": {
     "axios": "^0.16.1",
     "body-parser": "^1.18.3",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.0",
     "compression": "^1.7.3",
     "cors": "^2.8.5",
     "moment": "^2.22.2",
