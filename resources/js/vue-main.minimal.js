@@ -273,6 +273,9 @@ var app = new Vue({
     team2: function(){ return getTeamTag(this.info.p3_name, this.info.p4_name) },   
     team1S4: function(){ return getTeamTag(this.info.p1_name_s4, this.info.p2_name_s4) },
     team2S4: function(){ return getTeamTag(this.info.p3_name_s4, this.info.p4_name_s4) },
+    singlecambar: function() { 
+      return this.info.p1_games + ' - ' + this.info.p1_name + ' vs ' + this.info.p2_name + ' - ' + this.info.p2_games;
+    },
     p1SponsorUltimate: function(){
       return this.info.p1_sponsor_image_ultimate != 'None' ?
         getSponsor(this.info.p1_sponsor_image_ultimate) : null;
