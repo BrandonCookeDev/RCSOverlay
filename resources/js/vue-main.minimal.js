@@ -20,6 +20,7 @@ const MELEE_WEBM      = join(WEBM_DIR, 'Melee');
 const SMASH4_WEBM     = join(WEBM_DIR, 'Smash4');
 const MELEE_CHAR_DIR  = join(CHARACTER_DIR, 'Melee');
 const SMASH4_CHAR_DIR = join(CHARACTER_DIR, 'Smash 4');
+const MELEE_ICON_DIR  = join(MELEE_CHAR_DIR, 'icons');
 
 //JSON Polling and Intervals
 var LEGAL_IMAGE_STATES         = ['FLAG', 'SPONSOR'];
@@ -67,6 +68,10 @@ function getTwitterLogo(){
 
 function getMeleeChar(character){
   return join(MELEE_CHAR_DIR, character + '.png');
+}
+
+function getMeleeCharIcon(character){
+  return join(MELEE_ICON_DIR, character + 'Default.png');
 }
 
 function getSmash4Char(character){
@@ -273,9 +278,6 @@ var app = new Vue({
     team2: function(){ return getTeamTag(this.info.p3_name, this.info.p4_name) },   
     team1S4: function(){ return getTeamTag(this.info.p1_name_s4, this.info.p2_name_s4) },
     team2S4: function(){ return getTeamTag(this.info.p3_name_s4, this.info.p4_name_s4) },
-    singlecambar: function() { 
-      return this.info.p1_games + ' - ' + this.info.p1_name + ' vs ' + this.info.p2_name + ' - ' + this.info.p2_games;
-    },
     p1SponsorUltimate: function(){
       return this.info.p1_sponsor_image_ultimate != 'None' ?
         getSponsor(this.info.p1_sponsor_image_ultimate) : null;
@@ -303,6 +305,18 @@ var app = new Vue({
     },
     player4Character: function(){
       return getMeleeChar(this.info.p4_char);
+    },
+    player1CharacterIcon: function(){
+      return getMeleeCharIcon(this.info.p1_char);
+    },
+    player2CharacterIcon: function(){
+      return getMeleeCharIcon(this.info.p2_char);
+    },
+    player3CharacterIcon: function(){
+      return getMeleeCharIcon(this.info.p3_char);
+    },
+    player4CharacterIcon: function(){
+      return getMeleeCharIcon(this.info.p4_char);
     },
     player1CharacterS4: function(){
       return getSmash4Char(this.info.p1_char_s4);
@@ -398,6 +412,19 @@ var app = new Vue({
       return zeroPad(this.timestamp.getHours()) + ':' +
              zeroPad(this.timestamp.getMinutes()) + ':' +
              zeroPad(this.timestamp.getSeconds());
+    },
+    singlecambar: function() { 
+      return '<img src="' + this.player1CharacterIcon + '" class="character_icon p1_icon" />'
+        + '  '
+        + this.info.p1_games 
+        + ' - ' 
+        + this.info.p1_name 
+        + ' vs ' 
+        + this.info.p2_name 
+        + ' - ' 
+        + this.info.p2_games
+        + '  '
+        + '<img src="' + this.player2CharacterIcon + '" class="character_icon p2_icon" />';
     }
   },
   methods: {

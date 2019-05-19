@@ -28,8 +28,10 @@
 	div.team1{
 		position: fixed;
 		margin-top: 438px;
-		margin-left: 10px;
+		margin-left: 0px;
 		font-size:110%;
+		text-align: center;
+		width: 36%;
 	}
 
 	div.team1Score{
@@ -62,6 +64,27 @@
 		margin-top:15px;
 		font-size:27pt;
 	}
+	
+	div.character1{
+		position: fixed;
+		margin-top: 757px;
+	}
+
+	div.character2{
+		position: fixed;
+		margin-top:757px;
+	}
+
+	/*
+	html{
+		background-image:url('../resources/images/Overlays/WTTest.png');
+	}
+	*/
+	
+	.character_icon{
+		height:35px;
+		vertical-align: middle;
+	}
   </style>
 </head>
 
@@ -80,8 +103,8 @@
       <transition name="fade" mode="out-in">
         <span class="round" :key="gameHeader" v-html="gameHeader"></span>
       </transition>
-    </div>
-
+		</div>
+		
   </div>
 </body>
 
