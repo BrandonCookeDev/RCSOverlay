@@ -1,5 +1,14 @@
 'use strict';
 
+const err = e => {
+	console.error('UNHANDLED:');
+	console.error(e);
+	process.exit(1);
+}
+process.on('error', err);
+process.on('uncaughtException', err);
+process.on('unhandledRejection', err);
+
 const path = require('path');
 let express = require('express');
 let chalk = require('chalk');
