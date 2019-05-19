@@ -18,6 +18,8 @@ app.use(require('body-parser').urlencoded());
 app.use(require('compression')());
 app.use('/api', routes);
 
+app.use(express.static(ROOT));
+
 app.listen(PORT, function(err){
 	if(err){
 		console.error(err);

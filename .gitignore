@@ -1,3 +1,6 @@
+.idea/
+.vs/
+
 resources/videos/*
 
 webm/

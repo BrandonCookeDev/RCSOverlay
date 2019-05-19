@@ -29,11 +29,10 @@
     "smashgg-recent-results": "^1.0.4",
     "vue": "^2.3.2",
     "vue2-animate": "^1.0.4",
-    "winston": "^2.4.4"
-  },
-  "devDependencies": {
+    "winston": "^2.4.4",
     "chalk": "^2.4.1",
     "express": "^4.16.3",
     "handlebars": "^4.0.11"
-  }
+  },
+  "devDependencies": {  }
 }

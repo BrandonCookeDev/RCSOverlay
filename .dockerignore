@@ -1,0 +1,15 @@
+.vscode/
+.idea/
+node_modules/
+BPres/
+DataSets/
+Docker/
+StreamControl_0_4b
+test/
+OverlayFiles-SS/
+
+.gitignore
+.dockerignore
+package-lock.json
+*.streamDeckProfile
+readme.md
