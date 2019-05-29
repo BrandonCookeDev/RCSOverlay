@@ -1,7 +1,6 @@
 ﻿[string] $Basedir = $PSScriptRoot
 [string] $Regex = "([a-zA-Z]:((\\|\/)|\/)([\S\s]*))(\\|\/)RCSOverlay"
 [string] $RCSOverlayRoot = Resolve-Path $PSScriptRoot\\..
-[string]
 
 [string] $XsplitBpresDirectory = Resolve-Path $RCSOverlayRoot\\configs\\XSplit
 [string] $ObsSceneProfileDirectory = Resolve-Path $RCSOverlayRoot\\configs\\OBS
