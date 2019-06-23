@@ -70,8 +70,8 @@ function getMeleeChar(character){
   return join(MELEE_CHAR_DIR, character + '.png');
 }
 
-function getMeleeCharIcon(character){
-  return join(MELEE_ICON_DIR, character + 'Default.png');
+function getMeleeCharIcon(character, color){
+  return join(MELEE_ICON_DIR, character + (color || 'Default') + '.png');
 }
 
 function getSmash4Char(character){
@@ -307,16 +307,16 @@ var app = new Vue({
       return getMeleeChar(this.info.p4_char);
     },
     player1CharacterIcon: function(){
-      return getMeleeCharIcon(this.info.p1_char);
+      return getMeleeCharIcon(this.info.p1_char, this.info.p1_port_color);
     },
     player2CharacterIcon: function(){
-      return getMeleeCharIcon(this.info.p2_char);
+      return getMeleeCharIcon(this.info.p2_char, this.info.p2_port_color);
     },
     player3CharacterIcon: function(){
-      return getMeleeCharIcon(this.info.p3_char);
+      return getMeleeCharIcon(this.info.p3_char, this.info.p3_port_color);
     },
     player4CharacterIcon: function(){
-      return getMeleeCharIcon(this.info.p4_char);
+      return getMeleeCharIcon(this.info.p4_char, this.info.p4_port_color);
     },
     player1CharacterS4: function(){
       return getSmash4Char(this.info.p1_char_s4);

@@ -18,9 +18,9 @@
 					<label x='5' y='65' width='40' height='14'>Games:</label>
 						<spinBox id='p1_games' x='55' y='60' width='110' height='25' maximum='999'/>
 					<button id='reset_p1' type='reset' x='170' y='60' width='55' height='25' tooltip='Reset Player 1' reset='p1_games'>Reset</button>
-					<label x='5' y='90' height='14' width='75'> Port: </label>
+					<label x='5' y='90' height='14' width='75'> Color: </label>
 						<comboBox id="p1_port_color" x='55' y='85'>
-							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem>
+							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem><comboItem>Pink</comboItem><comboItem>Black</comboItem><comboItem>Purple</comboItem><comboItem>White</comboItem><comboItem>Orange</comboItem><comboItem>Pink</comboItem><comboItem>Black</comboItem><comboItem>Purple</comboItem><comboItem>White</comboItem><comboItem>Orange</comboItem>
 						</comboBox>
 					<label x='5' y='115' height='14' width='75'>Country:</label>
 						<comboBox x="55" y="110" width="50" height="14" id="p1_country" editable='1'>
@@ -49,7 +49,7 @@
 					<button id='reset_p1' type='reset' x='170' y='60' width='55' height='25' tooltip='Reset Player 2' reset='p2_games'>Reset</button>
 					<label x='5' y='90' height='14' width='75'> Port: </label>
 						<comboBox id="p2_port_color" x='55' y='85'>
-							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem>
+							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem><comboItem>Pink</comboItem><comboItem>Black</comboItem><comboItem>Purple</comboItem><comboItem>White</comboItem><comboItem>Orange</comboItem>
 						</comboBox>
 					<label x='5' y='115' height='14' width='75'>Country:</label>
 						<comboBox x="55" y="110" width="50" height="14" id="p2_country" editable='1'>
@@ -85,9 +85,9 @@
 					<label x='5' y='65' width='40' height='14'>Games:</label>
 						<spinBox id='p3_games' x='55' y='60' width='110' height='25' maximum='999'/>
 					<button id='reset_p1' type='reset' x='170' y='60' width='55' height='25' tooltip='Reset Player 3' reset='p3_games'>Reset</button>
-					<label x='5' y='90' height='14' width='75'> Port: </label>
+					<label x='5' y='90' height='14' width='75'> Color: </label>
 						<comboBox id="p3_port_color" x='55' y='85'>
-							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem>
+							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem><comboItem>Pink</comboItem><comboItem>Black</comboItem><comboItem>Purple</comboItem><comboItem>White</comboItem><comboItem>Orange</comboItem>
 						</comboBox>
 					<label x='5' y='115' height='14' width='75'>Country:</label>
 						<comboBox x="55" y="110" width="50" height="14" id="p3_country" editable='1'>
@@ -115,9 +115,9 @@
 					<label x='5' y='65' width='40' height='14'>Games:</label>
 						<spinBox id='p4_games' x='55' y='60' width='110' height='25' maximum='999'/>
 					<button id='reset_p1' type='reset' x='170' y='60' width='55' height='25' tooltip='Reset Player 4' reset='p4_games'>Reset</button>
-					<label x='5' y='90' height='14' width='75'> Port: </label>
+					<label x='5' y='90' height='14' width='75'> Color: </label>
 						<comboBox id="p4_port_color" x='55' y='85'>
-							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem>
+							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem><comboItem>Pink</comboItem><comboItem>Black</comboItem><comboItem>Purple</comboItem><comboItem>White</comboItem><comboItem>Orange</comboItem>
 						</comboBox>
 					<label x='5' y='115' height='14' width='75'>Country:</label>
 						<comboBox x="55" y="110" width="50" height="14" id="p4_country" editable='1'>
@@ -165,9 +165,9 @@
 					<label x='5' y='65' width='40' height='14'>Games:</label>
 						<spinBox id='p1_games_ultimate' x='55' y='60' width='110' height='25' maximum='999'/>
 					<button id='reset_p1' type='reset' x='170' y='60' width='55' height='25' tooltip='Reset Player 1' reset='p1_games_ultimate'>Reset</button>
-					<label x='5' y='90' height='14' width='75'> Port: </label>
+					<label x='5' y='90' height='14' width='75'> Color: </label>
 						<comboBox id="p1_port_color_ultimate" x='55' y='85'>
-							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem>
+							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem><comboItem>Pink</comboItem><comboItem>Black</comboItem><comboItem>Purple</comboItem><comboItem>White</comboItem><comboItem>Orange</comboItem>
 						</comboBox>
 					<label x='5' y='115' height='14' width='75'>Country:</label>
 						<comboBox x="55" y="110" width="50" height="14" id="p1_country_ultimate" editable='1'>
@@ -195,9 +195,9 @@
 					<label x='5' y='65' width='40' height='14'>Games:</label>
 						<spinBox id='p2_games_ultimate' x='55' y='60' width='110' height='25' maximum='999'/>
 					<button id='reset_p1' type='reset' x='170' y='60' width='55' height='25' tooltip='Reset Player 2' reset='p2_games_ultimate'>Reset</button>
-					<label x='5' y='90' height='14' width='75'> Port: </label>
+					<label x='5' y='90' height='14' width='75'> Color: </label>
 						<comboBox id="p2_port_color_ultimate" x='55' y='85'>
-							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem>
+							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem><comboItem>Pink</comboItem><comboItem>Black</comboItem><comboItem>Purple</comboItem><comboItem>White</comboItem><comboItem>Orange</comboItem>
 						</comboBox>
 					<label x='5' y='115' height='14' width='75'>Country:</label>
 						<comboBox x="55" y="110" width="50" height="14" id="p2_country_ultimate" editable='1'>
@@ -232,9 +232,9 @@
 					<label x='5' y='65' width='40' height='14'>Games:</label>
 						<spinBox id='p3_games_ultimate' x='55' y='60' width='110' height='25' maximum='999'/>
 					<button id='reset_p1' type='reset' x='170' y='60' width='55' height='25' tooltip='Reset Player 3' reset='p3_games_ultimate'>Reset</button>
-					<label x='5' y='90' height='14' width='75'> Port: </label>
+					<label x='5' y='90' height='14' width='75'> Color: </label>
 						<comboBox id="p3_port_color_ultimate" x='55' y='85'>
-							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem>
+							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem><comboItem>Pink</comboItem><comboItem>Black</comboItem><comboItem>Purple</comboItem><comboItem>White</comboItem><comboItem>Orange</comboItem>
 						</comboBox>
 					<label x='5' y='115' height='14' width='75'>Country:</label>
 						<comboBox x="55" y="110" width="50" height="14" id="p3_country_ultimate" editable='1'>
@@ -261,9 +261,9 @@
 					<label x='5' y='65' width='40' height='14'>Games:</label>
 						<spinBox id='p4_games_ultimate' x='55' y='60' width='110' height='25' maximum='999'/>
 					<button id='reset_p1' type='reset' x='170' y='60' width='55' height='25' tooltip='Reset Player 4' reset='p4_games_ultimate'>Reset</button>
-					<label x='5' y='90' height='14' width='75'> Port: </label>
+					<label x='5' y='90' height='14' width='75'> Color: </label>
 						<comboBox id="p4_port_color_ultimate" x='55' y='85'>
-							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem>
+							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem><comboItem>Pink</comboItem><comboItem>Black</comboItem><comboItem>Purple</comboItem><comboItem>White</comboItem><comboItem>Orange</comboItem>
 						</comboBox>
 					<label x='5' y='115' height='14' width='75'>Country:</label>
 						<comboBox x="55" y="110" width="50" height="14" id="p4_country_ultimate" editable='1'>
@@ -309,9 +309,9 @@
 					<label x='5' y='65' width='40' height='14'>Games:</label>
 						<spinBox id='p1_games_s4' x='55' y='60' width='110' height='25' maximum='999'/>
 					<button id='reset_p1' type='reset' x='170' y='60' width='55' height='25' tooltip='Reset Player 1' reset='p1_games_s4'>Reset</button>
-					<label x='5' y='90' height='14' width='75'> Port: </label>
+					<label x='5' y='90' height='14' width='75'> Color: </label>
 						<comboBox id="p1_port_color_s4" x='55' y='85'>
-							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem>
+							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem><comboItem>Pink</comboItem><comboItem>Black</comboItem><comboItem>Purple</comboItem><comboItem>White</comboItem><comboItem>Orange</comboItem>
 						</comboBox>
 					<label x='5' y='115' height='14' width='75'>Country:</label>
 						<comboBox x="55" y="110" width="50" height="14" id="p1_country_s4" editable='1'>
@@ -339,9 +339,9 @@
 					<label x='5' y='65' width='40' height='14'>Games:</label>
 						<spinBox id='p2_games_s4' x='55' y='60' width='110' height='25' maximum='999'/>
 					<button id='reset_p1' type='reset' x='170' y='60' width='55' height='25' tooltip='Reset Player 2' reset='p2_games_s4'>Reset</button>
-					<label x='5' y='90' height='14' width='75'> Port: </label>
+					<label x='5' y='90' height='14' width='75'> Color: </label>
 						<comboBox id="p2_port_color_s4" x='55' y='85'>
-							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem>
+							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem><comboItem>Pink</comboItem><comboItem>Black</comboItem><comboItem>Purple</comboItem><comboItem>White</comboItem><comboItem>Orange</comboItem>
 						</comboBox>
 					<label x='5' y='115' height='14' width='75'>Country:</label>
 						<comboBox x="55" y="110" width="50" height="14" id="p2_country_s4" editable='1'>
@@ -376,9 +376,9 @@
 					<label x='5' y='65' width='40' height='14'>Games:</label>
 						<spinBox id='p3_games_s4' x='55' y='60' width='110' height='25' maximum='999'/>
 					<button id='reset_p1' type='reset' x='170' y='60' width='55' height='25' tooltip='Reset Player 3' reset='p3_games_s4'>Reset</button>
-					<label x='5' y='90' height='14' width='75'> Port: </label>
+					<label x='5' y='90' height='14' width='75'> Color: </label>
 						<comboBox id="p3_port_color_s4" x='55' y='85'>
-							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem>
+							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem><comboItem>Pink</comboItem><comboItem>Black</comboItem><comboItem>Purple</comboItem><comboItem>White</comboItem><comboItem>Orange</comboItem>
 						</comboBox>
 					<label x='5' y='115' height='14' width='75'>Country:</label>
 						<comboBox x="55" y="110" width="50" height="14" id="p3_country_s4" editable='1'>
@@ -405,9 +405,9 @@
 					<label x='5' y='65' width='40' height='14'>Games:</label>
 						<spinBox id='p4_games_s4' x='55' y='60' width='110' height='25' maximum='999'/>
 					<button id='reset_p1' type='reset' x='170' y='60' width='55' height='25' tooltip='Reset Player 4' reset='p4_games_s4'>Reset</button>
-					<label x='5' y='90' height='14' width='75'> Port: </label>
+					<label x='5' y='90' height='14' width='75'> Color: </label>
 						<comboBox id="p4_port_color_s4" x='55' y='85'>
-							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem>
+							<comboItem>Red</comboItem><comboItem>Blue</comboItem><comboItem>Green</comboItem><comboItem>Yellow</comboItem><comboItem>Pink</comboItem><comboItem>Black</comboItem><comboItem>Purple</comboItem><comboItem>White</comboItem><comboItem>Orange</comboItem>
 						</comboBox>
 					<label x='5' y='115' height='14' width='75'>Country:</label>
 						<comboBox x="55" y="110" width="50" height="14" id="p4_country_s4" editable='1'>
