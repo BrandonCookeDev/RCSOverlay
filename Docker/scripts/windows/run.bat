@@ -14,6 +14,6 @@ echo Running Docker container %IMAGE_NAME%
 cd %BASEDIR%\..\..\..
 docker run %* ^
 	-p 8081:8081 ^
-	--mount type=bind,source=%ROOTDIR%\StreamControl_0_4b,target=/app/current/StreamControl_0_4b ^
+	--mount type=bind,source=%ROOTDIR%\Src\streamcontrol,target=/app/current/streamcontrol ^
 	-it %IMAGE_NAME%
 cd %CURDIR%

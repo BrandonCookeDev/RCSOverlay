@@ -3,7 +3,7 @@ FROM node:8
 ENV APP_DIR /app/current
 WORKDIR ${APP_DIR}
 
-COPY . .
+COPY ./Src .
 
 RUN npm i --production
 

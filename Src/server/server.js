@@ -17,7 +17,8 @@ let app = express();
 const PORT = 8081;
 const ROOT = path.join(__dirname, '..');
 const TEST_FILE = path.join(__dirname, 'data.json');
-const PROD_FILE = path.join(ROOT, 'StreamControl_0_4b', 'streamcontrol.json');
+const STREAM_CONTROL = path.join(ROOT, '..', 'StreamControl_0_4b')
+const PROD_FILE = path.join(STREAM_CONTROL, 'streamcontrol.json');
 process.env.JSON_FILEPATH = PROD_FILE;
 let routes = require('./lib/endpoints');
 

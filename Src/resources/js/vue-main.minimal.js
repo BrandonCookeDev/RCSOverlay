@@ -30,7 +30,7 @@ var NAMEPLATE_STATE            = 'TAG';
 const POLL_INTERVAL            = 500;
 const IMAGE_STATE_INTERVAL     = 10000;
 const NAMEPLATE_STATE_INTERVAL = 10000;
-const JSON_PATH = '../StreamControl_0_4b/streamcontrol.json';
+const JSON_PATH = '../../streamcontrol/streamcontrol.json';
 
 var port         = 11769;
 const ROUND_INTERVAL = 10000;

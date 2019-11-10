@@ -19,7 +19,7 @@ echo Running Docker container $IMAGE_NAME
 cd $ROOTDIR
 docker run $@ \
 	-p 8081:8081 \
-	--mount type=bind,source=$ROOTDIR/StreamControl_0_4b,target=$APP_DIR/StreamControl_0_4b \
+	--mount type=bind,source=$ROOTDIR/Src/streamcontrol,target=$APP_DIR/streamcontrol \
 	-it $IMAGE_NAME
 cd $CURDIR
 
