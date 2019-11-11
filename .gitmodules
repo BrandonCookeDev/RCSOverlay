@@ -1,3 +1,6 @@
 [submodule "StreamControl/StreamControlPlusPlus"]
 	path = StreamControl/StreamControlPlusPlus
 	url = https://github.com/BrandonCookeDev/StreamControlPlusPlus.git
+[submodule "StreamControl/RCSStreamControl"]
+	path = StreamControl/RCSStreamControl
+	url = https://github.com/BrandonCookeDev/RCSStreamControl.git
