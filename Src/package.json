@@ -28,7 +28,7 @@
     "cors": "^2.8.5",
     "express": "^4.16.3",
     "handlebars": "^4.1.2",
-    "moment": "^2.22.2",
+    "moment": "^2.29.4",
     "smashgg-recent-results": "^1.0.4",
     "vue": "^2.3.2",
     "vue2-animate": "^1.0.4",
